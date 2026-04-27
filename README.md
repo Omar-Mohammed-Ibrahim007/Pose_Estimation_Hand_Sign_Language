@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Hand Sign Recognition System</title>
 
-    `<style>`
+    <style>
         body {
             font-family: Arial, sans-serif;
             background: #0f172a;
@@ -22,7 +22,6 @@
 
     h1 {
             color: #38bdf8;
-            margin-bottom: 5px;
         }
 
     .container {
@@ -38,14 +37,16 @@
             border-radius: 10px;
         }
 
-    code {
+    code, pre {
             background: #0f172a;
-            padding: 3px 6px;
+            padding: 10px;
             border-radius: 5px;
             color: #facc15;
+            display: block;
+            overflow-x: auto;
         }
 
-    ul, ol {
+    ul {
             line-height: 1.8;
         }
 
@@ -59,49 +60,57 @@
         }
 
     .badges img {
-            margin: 5px;
-        }`</style>`
+            margin: 3px;
+        }</style>
 
 </head>
 
 <body>
 
 <header>
-    <h1> Hand Sign Recognition System</h1>
+    <h1>Hand Sign Recognition System</h1>
     <p>MediaPipe + Machine Learning + OpenCV + Gradio</p>
 
-    `<div class="badges">`
-        `<img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge">`
-        `<img src="https://img.shields.io/badge/OpenCV-CV-green?style=for-the-badge">`
-        `<img src="https://img.shields.io/badge/MediaPipe-Hands-orange?style=for-the-badge">`
-        `<img src="https://img.shields.io/badge/ML-Scikit--Learn-red?style=for-the-badge">`
-    `</div>`
-`</header>`
+    <div class="badges">
+        <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge">
+        <img src="https://img.shields.io/badge/OpenCV-CV-green?style=for-the-badge">
+        <img src="https://img.shields.io/badge/MediaPipe-Hands-orange?style=for-the-badge">
+        <img src="https://img.shields.io/badge/ML-Scikit--Learn-red?style=for-the-badge">
+    </div>
+</header>
 
 <div class="container">
 
-    `<div class="card">`
-        `<h2>` Project Overview `</h2>`
-        `<p>`
-            This project is a real-time hand sign recognition system using `<b>`MediaPipe Hands `</b>`,
+    <div class="card">
+        <h2>Project Overview</h2>
+        <p>
+             This project is a real-time hand sign recognition system using <b>MediaPipe Hands</b>,
             feature extraction, and multiple machine learning classifiers.
-            It supports image, video, and real-time prediction using Gradio interface.
-        `</p>`
-    `</div>`
+            It supports image, video, and real-time prediction with Gradio.
+        </p>
+    </div>
+    <div class="card">
+        <h2> Features</h2>
+        <ul>
+            <li>✔ Image prediction</li>
+            <li>✔ Video prediction</li>
+            <li>✔ Real-time hand tracking</li>
+            <li>✔ Majority voting for stability</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h2>Tech Stack</h2>
+        <span class="tag">Python
+        <span class="tag">OpenCV
+        <span class="tag">MediaPipe
+        <span class="tag">Scikit-Learn
+        <span class="tag">Gradio
+        <span class="tag">NumPy
+        <span class="tag">Joblib
+    </div>
 
-    `<div class="card">`
-        `<h2>` Tech Stack `</h2>`
-        `<span class="tag">`Python
-        `<span class="tag">`OpenCV
-        `<span class="tag">`MediaPipe
-        `<span class="tag">`Scikit-Learn
-        `<span class="tag">`Gradio
-        `<span class="tag">`NumPy
-        `<span class="tag">`Joblib
-    `</div>`
-
-    `<div class="card">`
-        `<h2>` Project Structure `</h2>`
+    <div class="card">
+        <h2>Project Structure</h2>
 
 <pre>
 Pose_Estimation/
@@ -110,91 +119,49 @@ Pose_Estimation/
  │   ├── scaler.pkl
  │
  ├── models/
- │   ├── trained_models.pkl
+ │   ├── *.pkl
  │
 hand_landmarker.task
 app.py
 Dataset/
  ├── *.mp4
-README.html
+README.md
 </pre>
 
-    `</div>`
+    </div>
+    
 
-    `<div class="card">`
-        `<h2>` Machine Learning Pipeline `</h2>`
-        `<ul>`
-            `<li>`MediaPipe extracts 21 hand landmarks `</li>`
-            `<li>`Each landmark → (x, y) → 42 features `</li>`
-            `<li>`Features normalized using `<code>`StandardScaler `</code></li>`
-            `<li>`Multiple classifiers tested:
-                `<ul>`
-                    `<li>`Logistic Regression `</li>`
-                    `<li>`Random Forest `</li>`
-                    `<li>`SVM `</li>`
-                    `<li>`MLP Neural Network `</li>`
-                    `<li>`LDA (best generalization)`</li>`
-                `</ul>`
-            `</li>`
-        `</ul>`
-    `</div>`
+    <div class="card">
+        <h2>Machine Learning Pipeline</h2>
+        <ul>
+            <li>MediaPipe extracts 21 hand landmarks</li>
+            <li>Each landmark → (x, y) → 42 features</li>
+            <li>Features scaled using StandardScaler</li>
+            <li>Models: SVM, RF, MLP, LDA, ..etc</li>
+        </ul>
+    </div>
 
-    `<div class="card">`
-        `<h2>` Features `</h2>`
-        `<ul>`
-            `<li>`✔ Image-based prediction `</li>`
-            `<li>`✔ Video-based prediction `</li>`
-            `<li>`✔ Real-time hand tracking (MediaPipe)`</li>`
-            `<li>`✔ Feature scaling + ML pipeline `</li>`
-            `<li>`✔ Majority vote for stable prediction `</li>`
-        `</ul>`
-    `</div>`
+    <div class="card">
+        <h2>Run Project</h2>
+        <pre><code>python app.py</code></pre>
+    </div>
 
-    `<div class="card">`
-        `<h2>` How It Works `</h2>`
-        `<ol>`
-            `<li>`Capture image/video frame `</li>`
-            `<li>`Detect hand landmarks using MediaPipe `</li>`
-            `<li>`Convert landmarks → feature vector `</li>`
-            `<li>`Scale features using trained scaler `</li>`
-            `<li>`Predict using trained ML model `</li>`
-        `</ol>`
-    `</div>`
+  <div class="card">
+        <h2> Author</h2>
+        <p>Omar Mohammed</p>
+        <p>Computer Vision & Machine Learning Project</p>
+    </div>
 
-    `<div class="card">`
-        `<h2>` Run Project `</h2>`
-        `<pre><code>`pip install -r requirements.txt
-python app.py `</code></pre>`
-    `</div>`
-
-    `<div class="card">`
-        `<h2>` Models Used `</h2>`
-        `<ul>`
-            `<li>`LDA (Best generalization)`</li>`
-            `<li>`SVM (RBF & Linear)`</li>`
-            `<li>`Random Forest `</li>`
-            `<li>`Decision Tree `</li>`
-            `<li>`MLP Neural Network `</li>`
-            `<li>`Naive Bayes variants `</li>`
-        `</ul>`
-    `</div>`
-
-    `<div class="card">`
-        `<h2>` Notes `</h2>`
-        `<ul>`
-            `<li>`MediaPipe VIDEO mode requires increasing timestamps `</li>`
-            `<li>`Dataset imbalance may affect class bias `</li>`
-            `<li>`Best results achieved with LDA + clean features `</li>`
-        `</ul>`
-    `</div>`
-
-    `<div class="card">`
-        `<h2>` Author `</h2>`
-        `<p>`Omar Mohammed `</p>`
-        `<p>`Computer Vision & Machine Learning Project `</p>`
-    `</div>`
-
+    <div class="card">
+        <h2> Notes</h2>
+        <ul>
+            <li>MediaPipe VIDEO mode needs increasing timestamps</li>
+            <li>Dataset imbalance affects accuracy</li>
+            <li>LDA performed best overall</li>
+        </ul>
+    </div>
 </div>
+
 
 </body>
 </html><!DOCTYPE html>
