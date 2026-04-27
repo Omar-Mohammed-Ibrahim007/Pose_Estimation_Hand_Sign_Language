@@ -1,0 +1,14 @@
+# ZIP files
+archive.zip
+
+# Dataset folder
+Dataset/
+
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
