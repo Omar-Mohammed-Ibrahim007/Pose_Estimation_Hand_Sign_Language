@@ -3,8 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Hand Sign Recognition System</title>
+</head>
+
+<body>
 
 <style>
+
+
     body {
         margin: 0;
         font-family: "Segoe UI", Arial, sans-serif;
@@ -84,29 +89,26 @@
     }
 </style>
 
-</head>
 
-<body>
 
 <header>
-    <h1>🤟 Hand Sign Recognition System</h1>
+    <h1>Hand Sign Recognition System</h1>
     <div class="subtitle">
         MediaPipe • Machine Learning • OpenCV • Gradio
     </div>
 
-    <div class="badges">
-        <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge">
-        <img src="https://img.shields.io/badge/OpenCV-CV-green?style=for-the-badge">
-        <img src="https://img.shields.io/badge/MediaPipe-Hands-orange?style=for-the-badge">
-        <img src="https://img.shields.io/badge/ML-Scikit--Learn-red?style=for-the-badge">
-    </div>
+   ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge)
+   ![OpenCV](https://img.shields.io/badge/OpenCV-CV-green?style=for-the-badge)
+   ![MediaPipe](https://img.shields.io/badge/MediaPipe-Hands-orange?style=for-the-badge)
+   ![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-red?style=for-the-badge)
+
 </header>
 
 <div class="container">
 
 <!-- PROJECT OVERVIEW -->
 <div class="card">
-    <h2>📌 Project Overview</h2>
+    <h2>Project Overview</h2>
     <p>
         A real-time hand sign recognition system using <b>MediaPipe Hands</b>,
         extracting 21 key landmarks and applying multiple machine learning models
@@ -116,7 +118,7 @@
 
 <!-- FEATURES -->
 <div class="card">
-    <h2>🚀 Features</h2>
+    <h2>Features</h2>
     <ul>
         <li>Real-time hand detection using MediaPipe</li>
         <li>Image-based prediction</li>
@@ -128,7 +130,7 @@
 
 <!-- TECH STACK -->
 <div class="card">
-    <h2>⚙️ Tech Stack</h2>
+    <h2>Tech Stack</h2>
 
     <span class="tag">Python</span>
     <span class="tag">OpenCV</span>
@@ -141,7 +143,7 @@
 
 <!-- STRUCTURE -->
 <div class="card">
-    <h2>📁 Project Structure</h2>
+    <h2>Project Structure</h2>
 
 <pre>
 Pose_Estimation/
@@ -154,15 +156,16 @@ Pose_Estimation/
  │
 hand_landmarker.task
 app.py
+hand_sign_frame_dataset.csv
 Dataset/
  ├── *.mp4
-README.html
+README.md
 </pre>
 </div>
 
 <!-- ML PIPELINE -->
 <div class="card">
-    <h2>🧠 Machine Learning Pipeline</h2>
+    <h2>Machine Learning Pipeline</h2>
     <ul>
         <li>MediaPipe extracts 21 hand landmarks</li>
         <li>Each landmark → (x, y) → 42 features</li>
@@ -173,21 +176,21 @@ README.html
 
 <!-- RUN -->
 <div class="card">
-    <h2>▶️ Run Project</h2>
+    <h2>Run Project</h2>
 
 <pre>python app.py</pre>
 </div>
 
 <!-- AUTHOR -->
 <div class="card">
-    <h2>👨‍💻 Author</h2>
+    <h2>Author</h2>
     <p><b>Omar Mohammed</b></p>
     <p>Computer Vision & Machine Learning Project</p>
 </div>
 
 <!-- NOTES -->
 <div class="card">
-    <h2>⚠️ Notes</h2>
+    <h2>Notes</h2>
     <ul>
         <li>MediaPipe VIDEO mode requires increasing timestamps</li>
         <li>Dataset imbalance may affect accuracy</li>
