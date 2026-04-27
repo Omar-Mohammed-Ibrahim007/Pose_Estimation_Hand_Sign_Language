@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Hand Sign Recognition System</title>
-    <style>
+
+    `<style>`
         body {
             font-family: Arial, sans-serif;
             background: #0f172a;
@@ -21,6 +22,7 @@
 
     h1 {
             color: #38bdf8;
+            margin-bottom: 5px;
         }
 
     .container {
@@ -43,7 +45,7 @@
             color: #facc15;
         }
 
-    ul {
+    ul, ol {
             line-height: 1.8;
         }
 
@@ -54,6 +56,10 @@
             margin: 3px;
             border-radius: 5px;
             font-size: 13px;
+        }
+
+    .badges img {
+            margin: 5px;
         }`</style>`
 
 </head>
@@ -63,19 +69,14 @@
 <header>
     <h1> Hand Sign Recognition System</h1>
     <p>MediaPipe + Machine Learning + OpenCV + Gradio</p>
-    </p>
 
-<img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/OpenCV-CV-green?style=for-the-badge">
-<img src="https://img.shields.io/badge/MediaPipe-Hands-orange?style=for-the-badge">
-<img src="https://img.shields.io/badge/ML-Scikit--Learn-red?style=for-the-badge">
-
-</div>
-
-</header>
-
-
-
+    `<div class="badges">`
+        `<img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge">`
+        `<img src="https://img.shields.io/badge/OpenCV-CV-green?style=for-the-badge">`
+        `<img src="https://img.shields.io/badge/MediaPipe-Hands-orange?style=for-the-badge">`
+        `<img src="https://img.shields.io/badge/ML-Scikit--Learn-red?style=for-the-badge">`
+    `</div>`
+`</header>`
 
 <div class="container">
 
@@ -84,7 +85,7 @@
         `<p>`
             This project is a real-time hand sign recognition system using `<b>`MediaPipe Hands `</b>`,
             feature extraction, and multiple machine learning classifiers.
-            It supports image, video, and real-time prediction with a Gradio interface.
+            It supports image, video, and real-time prediction using Gradio interface.
         `</p>`
     `</div>`
 
@@ -124,8 +125,8 @@ README.html
         `<h2>` Machine Learning Pipeline `</h2>`
         `<ul>`
             `<li>`MediaPipe extracts 21 hand landmarks `</li>`
-            `<li>`Each landmark → (x, y) features → 42 features total `</li>`
-            `<li>`Data is normalized using `<code>`StandardScaler `</code></li>`
+            `<li>`Each landmark → (x, y) → 42 features `</li>`
+            `<li>`Features normalized using `<code>`StandardScaler `</code></li>`
             `<li>`Multiple classifiers tested:
                 `<ul>`
                     `<li>`Logistic Regression `</li>`
@@ -145,24 +146,24 @@ README.html
             `<li>`✔ Video-based prediction `</li>`
             `<li>`✔ Real-time hand tracking (MediaPipe)`</li>`
             `<li>`✔ Feature scaling + ML pipeline `</li>`
-            `<li>`✔ Majority vote for video prediction `</li>`
+            `<li>`✔ Majority vote for stable prediction `</li>`
         `</ul>`
     `</div>`
 
     `<div class="card">`
-        `<h2>` How It Works`</h2>`
+        `<h2>` How It Works `</h2>`
         `<ol>`
-            `<li>`Capture image/video frame`</li>`
-            `<li>`MediaPipe detects hand landmarks`</li>`
-            `<li>`Convert landmarks → feature vector`</li>`
-            `<li>`Scale features using scaler`</li>`
-            `<li>`Predict using trained ML model`</li>`
+            `<li>`Capture image/video frame `</li>`
+            `<li>`Detect hand landmarks using MediaPipe `</li>`
+            `<li>`Convert landmarks → feature vector `</li>`
+            `<li>`Scale features using trained scaler `</li>`
+            `<li>`Predict using trained ML model `</li>`
         `</ol>`
     `</div>`
 
     `<div class="card">`
         `<h2>` Run Project `</h2>`
-        `<pre><code>`
+        `<pre><code>`pip install -r requirements.txt
 python app.py `</code></pre>`
     `</div>`
 
@@ -189,13 +190,11 @@ python app.py `</code></pre>`
 
     `<div class="card">`
         `<h2>` Author `</h2>`
-
-    `<p> ENG: Omar Mohammed</p>`
-
-`<p>`Developed for Computer Vision + Machine Learning project using real-time hand tracking and classification.`</p>`
+        `<p>`Omar Mohammed `</p>`
+        `<p>`Computer Vision & Machine Learning Project `</p>`
     `</div>`
 
 </div>
 
 </body>
-</html>
+</html><!DOCTYPE html>
